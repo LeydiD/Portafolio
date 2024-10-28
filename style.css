@@ -1,0 +1,674 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Passion+One:wght@400;700;900&family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Pangolin&family=Passion+One:wght@400;700;900&family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+:root {
+    --color-de-fondo: #F5F5F5;
+    /* --color-de-fondo-menu: #ffffff; */
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    padding: 1rem;
+    background-color: var(--color-de-fondo-menu);
+}
+
+.cabecera__logo {
+    margin-left: 5%;
+    width: 15%;
+    height: auto;
+    margin-right: 1%;
+    /* Ajuste para pantallas pequeñas */
+}
+
+.cabecera__titulo {
+    width: 80%;
+    /* text-align: center; */
+    font-family: "Cookie", cursive;
+    font-style: normal;
+    margin-left: 0%;
+    font-size: 150%;
+}
+
+.inicio{
+    display: flex;
+     width: 50%;
+     align-items: center;
+    }
+
+.navegacion {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.navegacion__lista {
+    display: flex;
+    gap: 5%;
+    
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+
+.presentacion {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 300px;
+    margin-top: 2%;
+}
+
+.presentacion__foto {
+    width: 20%;
+    height: auto;
+
+}
+
+.presentacion__contenedor {
+    text-align: center;
+    width: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.presentacion__titulo {
+    font-family: "Rancho", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 45px;
+    color: rgb(63, 60, 60);
+}
+
+.presentacion__subtitulo {
+    font-family: "Rancho";
+    font-size: 25px;
+
+}
+
+.redes {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    display: flex;
+    gap: 10%;
+}
+
+.redes a {
+    text-align: center;
+    color: rgb(79, 79, 210);
+
+}
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+.sobre-mi {
+    margin-top: 5%;
+    background-color: rgba(116, 202, 255, 0.57);
+    padding: 4px;
+}
+
+.texto_sobre-mi {
+    padding: 20px;
+    width: 60%;
+    margin-left: 10%;
+    text-align: justify;
+}
+
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.habilidades__lista {
+    text-align: center;
+    justify-content: center;
+    margin-top: 55px;
+    display: flex;
+    gap: 10%;
+    padding: 0;
+
+}
+
+.habilidades__lista li {
+    text-align: center;
+}
+
+.habilidades__titulo {
+    font-family: "Rancho", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.habilidades__icono {
+    width: 32px;
+    height: 30px;
+
+}
+
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+.aficiones {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.aficiones__lista {
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    margin-top: 55px;
+    display: flex;
+    gap: 10%;
+}
+
+.aficiones__lista li {
+    text-align: center;
+}
+
+.aficiones__titulo {
+    font-family: "Rancho", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.aficiones__icono {
+    width: 32px;
+    height: 30px;
+
+}
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+.formacion {
+    background-color: rgba(149, 223, 255, 0.733);
+}
+.formacion__contenedor{
+    text-align: center;
+    margin-top: 5%;
+    padding: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.formacion__lista {
+    text-align: center;
+    justify-content: center;
+    margin-top: 55px;
+    display: flex;
+    gap: 10%;
+    height: 250px;
+}
+
+.formacion__lista li {
+    text-align: center;
+}
+
+.formacion__elemento {
+    width: 40%;
+}
+
+.formacion__titulo {
+    font-family: "Rancho", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+}
+.fondo_icono{
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    vertical-align: middle;
+}
+
+.formacion__icono {
+    margin-top: 2%;
+    width: auto;
+    height: 80%;
+}
+
+
+.proyectos {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.proyectos__titulo {
+    text-align: center;
+    font-family: "Rancho", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.proyectos__contenedor {
+    justify-content: center;
+    margin-top: 30px;
+    display: flex;
+    gap: 10%;
+}
+
+.proyectos__contenedor_texto {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 30%;
+    padding: 30px;
+}
+
+.proyectos__contenedor__imagen {
+    width: 60%;
+}
+
+.proyectos__contenedor__imagen img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.botones {
+    gap: 30px;
+}
+
+.botones1 {
+    width: auto;
+    padding: 9px;
+    border: 2px solid rgb(29, 123, 255);
+    border-radius: 2px;
+    color: rgb(29, 123, 255);
+}
+
+.botones2 {
+    background-color: rgb(53, 125, 242);
+    padding: 9px;
+    border: 2px solid rgb(53, 125, 242);
+    border-radius: 2px;
+    color: white;
+    width: auto;
+}
+
+.botones1:hover {
+    background-color: rgb(53, 125, 242);
+    color: white;
+}
+
+.botones2:hover {
+    background: none;
+    border: 2px solid rgb(29, 123, 255);
+    color: rgb(29, 123, 255);
+}
+
+.proyectos__nombre {
+    color: rgb(63, 60, 60);
+}
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto {
+    padding-top: 2%;
+    margin-top: 10%;
+    background-color: rgba(149, 223, 255, 0.733);
+    padding-bottom: 4%;
+}
+
+.contacto__contenedor {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.contacto__titulo {
+    font-family: "Rancho", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 35px;
+}
+
+
+.imagen_contacto {
+    width: 40%;
+}
+
+.imagen_contacto img {
+    width: 100%;
+    height: 100%;
+}
+
+.contacto__texto {
+    padding-left: 5%;
+    width: 60%;
+}
+
+.contacto__formulario {
+    display: block;
+    width: 100%;
+}
+
+.contacto__formulario input,
+textarea {
+    padding: 2%;
+    width: 90%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+.contacto__boton {
+    background-color: rgb(53, 125, 242);
+    padding: 9px;
+    border: 2px solid rgb(53, 125, 242);
+    border-radius: 2px;
+    color: white;
+    width: 20%;
+}
+
+.contacto__boton:hover {
+    background: none;
+    border: 2px solid rgb(29, 123, 255);
+    color: rgb(29, 123, 255);
+}
+
+footer{
+    padding: 1%;
+    background-color: white;
+    text-align: center;
+}
+
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Pantallas pequeñas */
+@media (max-width: 767px) {
+    /* Cabecera */
+    .cabecera {
+        display: block;
+    }
+    .inicio{
+        width: 100%;
+    }
+
+    .cabecera__logo {
+        width: 30%; /* Ajustar tamaño del logo */
+        max-width: 200px; /* Limitar el ancho máximo */
+        height: auto; /* Mantener proporción */
+    }
+
+    /* Navegación */
+    .navegacion {
+        width: 100%;
+        margin: 1rem 0; /* Espaciado entre elementos */
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: column; /* Apilar elementos en columna */
+        gap: 0.5rem; /* Espaciado entre elementos */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .navegacion__lista {
+        padding: 0;
+    }
+    /* Redes sociales */
+    .redes {
+        display: flex;
+        justify-content: center; /* Centrar redes sociales */
+        flex-wrap: wrap; /* Permitir que los elementos se ajusten */
+        gap: 1%; /* Espaciado entre iconos */
+        width: 100%; /* Asegurar que se ajusten al contenedor */
+        margin: 1rem 0; /* Añadir margen */
+    }
+
+    /* Presentación */
+    .presentacion {
+        flex-direction: column; /* Apilar imagen y texto */
+        align-items: center; /* Centrar elementos */
+        height: auto; /* Permitir ajuste de altura */
+    }
+
+    .presentacion__foto {
+        width: 100%; /* Ajustar el tamaño de la foto */
+        max-width: 300px; /* Limitar tamaño máximo */
+        height: auto; /* Mantener proporción */
+        margin-bottom: 1rem; /* Espaciado debajo de la imagen */
+    }
+
+    .presentacion__contenedor {
+        width: 90%; /* Espaciado del contenedor */
+    }
+
+
+    .habilidades,.aficiones{
+        font-size: 10px;
+    }
+
+    .habilidades__lista,.aficiones__lista{
+        padding: 0;
+    }
+    /* Proyectos */
+    .proyectos__contenedor {
+        flex-direction: column; /* Apilar imagen y texto */
+        align-items: center; /* Centrar elementos */
+        width: 100%; /* Asegurar que el contenedor ocupa todo el ancho */
+    }
+
+    .proyectos__contenedor__imagen {
+        width: 80%; /* Ajustar imagen */
+        height: auto; /* Mantener proporción */
+        margin-bottom: 1rem; /* Espaciado debajo de la imagen */
+    }
+
+    .proyectos__contenedor_texto {
+        width: 100%; /* Ajustar el ancho del texto */
+        padding: 0; /* Eliminar padding */
+        text-align: center; /* Centrar texto */
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: column; /* Apilar botones verticalmente */
+        align-items: center; /* Centrar botones */
+        gap: 10px; /* Espaciado entre botones */
+        margin-top: 1rem; /* Espaciado superior */
+    }
+
+    /* Formación Académica */
+
+    .formacion__contenedor{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .formacion__lista{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+        height: auto;
+    }
+    
+    .fondo_icono{
+        width: 100%;
+    }
+    .formacion__elemento {
+        padding-top: 4px;
+        flex-direction: column; /* Apilar imagen y texto */
+        align-items: center; /* Centrar elementos */
+        width: 100%; /* Ajustar el ancho */
+        margin: 1rem 0; /* Espaciado entre elementos */
+    }
+
+    
+    .formacion__icono {
+        width: 25%; /* Ajustar imagen */
+        height: auto; /* Mantener proporción */
+        max-width: 200px; /* Limitar tamaño máximo */
+        margin-bottom: 0.5rem; /* Espaciado debajo de la imagen */
+    }
+
+    .formacion__nombre{
+        text-align: center; /* Centrar texto */
+        margin: 0; /* Eliminar márgenes */
+        font-size: 14px;
+    }
+
+    .formacion__detalle{
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .proyectos__contenedor__imagen{
+        width: 100%;
+        height: auto;
+    }
+
+    .proyectos__contenedor{
+        margin-top: 10%;
+    }
+
+    .proyectos__nombre{
+        margin-top: 0;
+    }
+
+    .botones, .contacto__contenedor{
+        display: block;
+    }
+
+    .imagen_contacto, .contacto__texto{
+        width:100%
+    }
+
+    /* Botones de formulario */
+    .contacto__boton {
+        width: 50%; /* Asegurar que el botón ocupa todo el ancho */
+        padding: 0.75rem; /* Espaciado interno */
+        font-size: 1rem; /* Ajustar tamaño de texto */
+        box-sizing: border-box; /* Incluir padding y bordes en el tamaño total */
+    }
+
+    /* Ajustar márgenes para evitar que los botones queden cortados */
+    .experiencia__elemento {
+        margin-bottom: 1rem; /* Espaciado entre elementos */
+    }
+}
+
+/* Tablets y pantallas más grandes */
+@media (max-width: 1024px) {
+    /* Asegurar que los estilos para pantallas más grandes no se vean afectados */
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem; /* Espaciado */
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .proyectos__contenedor {
+        flex-direction: column; /* Apilar imagen y texto */
+        width: 100%; /* Asegurar que el contenedor ocupa todo el ancho */
+    }
+
+    .proyectos__contenedor__imagen {
+        width: 80%; /* Ajustar imagen */
+        height: auto; /* Mantener proporción */
+        margin-bottom: 1rem; /* Espaciado debajo de la imagen */
+    }
+
+    .proyectos__contenedor_texto {
+        width: 100%; /* Ajustar el ancho del texto */
+        padding: 0; /* Eliminar padding */
+        text-align: center; /* Centrar texto */
+    }
+
+    .botones {
+        margin: 0;
+        display: flex;
+        flex-direction: row; /* Apilar botones verticalmente */
+        align-items: center; /* Centrar botones */
+        gap: 10px; /* Espaciado entre botones */
+        margin-top: 1rem; /* Espaciado superior */
+    }
+    .proyectos__contenedor__imagen{
+        width: 100%;
+        height: auto;
+    }
+
+    .proyectos__contenedor{
+        margin-top: 10%;
+    }
+
+    .proyectos__nombre{
+        margin-top: 0;
+    }
+
+    .botones, .contacto__contenedor{
+        display: block;
+    }
+
+    .imagen_contacto, .contacto__texto{
+        width:100%
+    }
+
+    /* Botones de formulario */
+    .contacto__boton {
+        width: 50%; /* Asegurar que el botón ocupa todo el ancho */
+        padding: 0.75rem; /* Espaciado interno */
+        font-size: 1rem; /* Ajustar tamaño de texto */
+        box-sizing: border-box; /* Incluir padding y bordes en el tamaño total */
+    }
+
+}
